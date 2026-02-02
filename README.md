@@ -27,6 +27,19 @@ pip install pandas numpy scikit-learn xgboost matplotlib seaborn joblib jupyter
 jupyter notebook notebook.ipynb
 ```
 
+## Railway deployment
+1) Push this repo to GitHub.
+2) In Railway, create a new project and deploy from GitHub.
+3) Railway will detect the `Dockerfile` and build the service automatically.
+4) Ensure the model artifacts exist in `models/` (`best_random_forest_model.joblib`, `feature_columns.json`, `label_classes.json`).
+5) After deploy, test the service:
+
+```bash
+curl -X POST "$RAILWAY_URL/predict" \
+  -H "Content-Type: application/json" \
+  -d '{"Marital status":1,"Application mode":1,"Application order":1,"Course":1,"Daytime/evening attendance":1,"Previous qualification":1,"Nacionality":1,"Mother'"'"'s qualification":1,"Father'"'"'s qualification":1,"Mother'"'"'s occupation":1,"Father'"'"'s occupation":1,"Displaced":0,"Educational special needs":0,"Debtor":0,"Tuition fees up to date":1,"Gender":1,"Scholarship holder":0,"International":0}'
+```
+
 ## Notebook contents
 The notebook includes:
 - Data preparation and data cleaning
