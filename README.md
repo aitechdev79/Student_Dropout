@@ -69,6 +69,9 @@ Request body:
 }
 ```
 
+The SCREENSHOT - Student Dropout Predictor - Swagger UI.pdf file show successful deployment. Thank you for grading my work.
+Cheers,
+
 ## Notebook contents
 The notebook includes:
 - Data preparation and data cleaning
