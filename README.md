@@ -40,6 +40,35 @@ curl -X POST "$RAILWAY_URL/predict" \
   -d '{"Marital status":1,"Application mode":1,"Application order":1,"Course":1,"Daytime/evening attendance":1,"Previous qualification":1,"Nacionality":1,"Mother'"'"'s qualification":1,"Father'"'"'s qualification":1,"Mother'"'"'s occupation":1,"Father'"'"'s occupation":1,"Displaced":0,"Educational special needs":0,"Debtor":0,"Tuition fees up to date":1,"Gender":1,"Scholarship holder":0,"International":0}'
 ```
 
+## Try it out (Swagger UI)
+Open:
+`https://studentdropout-production.up.railway.app/docs#/default/predict_predict_post`
+
+Request body:
+
+```json
+{
+  "Marital status": 1,
+  "Application mode": 1,
+  "Application order": 1,
+  "Course": 1,
+  "Daytime/evening attendance": 1,
+  "Previous qualification": 1,
+  "Nacionality": 1,
+  "Mother's qualification": 1,
+  "Father's qualification": 1,
+  "Mother's occupation": 1,
+  "Father's occupation": 1,
+  "Displaced": 0,
+  "Educational special needs": 0,
+  "Debtor": 0,
+  "Tuition fees up to date": 1,
+  "Gender": 1,
+  "Scholarship holder": 0,
+  "International": 0
+}
+```
+
 ## Notebook contents
 The notebook includes:
 - Data preparation and data cleaning
